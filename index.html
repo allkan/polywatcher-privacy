@@ -28,7 +28,7 @@ footer{margin-top:3rem;font-size:0.85rem;color:#666}
 <p>PolyWatcher is <strong>not</strong> affiliated with Polymarket. It is <strong>not</strong> a trading bot, copy-trading tool, or brokerage.</p>
 <p><strong>Important:</strong> Ranking and market data are for <strong>reference only</strong>. They are <strong>not</strong> financial, investment, tax, or legal advice, and they do <strong>not</strong> guarantee any profit if you follow any wallet, ranking, or signal.</p>
 <hr/>
-<h2>2. Information we do **not** collect</h2>
+<h2>2. Information we do <strong>not</strong> collect</h2>
 <p>We do <strong>not</strong>:</p>
 <ul>
 <li>Ask for, collect, or store your Polymarket (or any other) <strong>account password</strong>, private keys, seed phrases, or wallet secrets  </li>
@@ -39,7 +39,7 @@ footer{margin-top:3rem;font-size:0.85rem;color:#666}
 </ul>
 <hr/>
 <h2>3. Information the Extension uses</h2>
-<h3>3.1 Data stored only on your device (`chrome.storage.local`)</h3>
+<h3>3.1 Data stored only on your device (<code>chrome.storage.local</code>)</h3>
 <p>The Extension may store locally on your browser:</p>
 <table>
 <tr><th>Item</th><th>Purpose</th></tr>
@@ -49,7 +49,7 @@ footer{margin-top:3rem;font-size:0.85rem;color:#666}
 <tr><td>Optional developer API override (hidden debug UI only)</td><td>Let maintainers point at a different rankings endpoint during testing</td></tr>
 </table>
 <p>This local data stays in your Chrome profile unless you clear Extension data or uninstall.</p>
-<h3>3.2 Background refresh (`chrome.alarms`)</h3>
+<h3>3.2 Background refresh (<code>chrome.alarms</code>)</h3>
 <p>The Extension uses Chrome <strong>alarms</strong> (about every 30 minutes) to refresh the rankings cache in the background so the panel stays reasonably up to date.</p>
 <h3>3.3 Network requests to our rankings API</h3>
 <p>To show rankings, the Extension’s background script requests ranking snapshots (JSON) from a <strong>publisher-operated HTTPS rankings API</strong> (for store builds this is currently <code>https://api.logic.red</code>).</p>
@@ -62,7 +62,7 @@ footer{margin-top:3rem;font-size:0.85rem;color:#666}
 </ul>
 <p>We use this only to operate, secure, and debug the rankings service (for example, abuse prevention and uptime). We do <strong>not</strong> use it to build advertising profiles.</p>
 <p><strong>We do not need you to send your Polymarket password for this fetch.</strong> The payload is public ranking-style data for the free tier.</p>
-<h3>3.4 Content script on `polymarket.com`</h3>
+<h3>3.4 Content script on <code>polymarket.com</code></h3>
 <p>On <code>https://polymarket.com/*</code> (and <code>www</code>), the Extension injects a <strong>UI panel</strong> (and related styles) to display rankings and links to public Polymarket profile pages (e.g. <code>/profile/&lt;wallet&gt;</code>).</p>
 <p>The content script is for <strong>display and Extension messaging</strong>. It is <strong>not</strong> designed to harvest your password or payment details from Polymarket forms.</p>
 <h3>3.5 Permissions (Chrome)</h3>
